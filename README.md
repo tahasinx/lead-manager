@@ -89,5 +89,3 @@ Lead Manager is a lead generation and management platform for property professio
 This project is proprietary. Contact the author for licensing information.
 
 ---
-
-**For questions or support, contact:** devjr.tryus@gmail.com
