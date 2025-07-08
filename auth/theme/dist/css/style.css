@@ -1,0 +1,164 @@
+.scrolls {
+    overflow-x : scroll;
+    overflow-y : hidden;
+    white-space: nowrap;
+}
+
+.scrolls::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+}
+
+.scrolls::-webkit-scrollbar {
+    background-color: #F5F5F5;
+    height          : 3px;
+}
+
+
+
+.scrolls::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border          : 2px solid #555555;
+}
+
+.scrolls {
+    scrollbar-width: thin !important;
+}
+
+.sign-box {
+    background: none;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.sign-box .title {
+    font-size     : 22px;
+    text-transform: uppercase;
+    margin        : 15px 0;
+    display       : block;
+    font-weight   : 600;
+    text-align    : center;
+}
+
+.sign-box .input-field,
+.sign-box .checkbox-field {
+    width   : 300px;
+    margin  : 15px auto;
+    position: relative;
+}
+
+.sign-box .input-field label.label {
+    position   : absolute;
+    left       : 15px;
+    top        : 15px;
+    font-size  : 14px;
+    color      : #ABABAB;
+    font-weight: normal;
+    transition : all ease-in-out 0.2s;
+}
+
+.sign-box .input-field input.input {
+    width      : 100%;
+    padding    : 0 15px;
+    height     : 45px;
+    line-height: 50px;
+    margin     : 0;
+    font-size  : 14px;
+    box-sizing : border-box;
+    border     : 2px solid #ABABAB;
+    outline    : none;
+    color      : #555;
+}
+
+.sign-box .input-field input.input:focus,
+.sign-box .input-field input.input.has-value {
+    border-color: #3F51B5;
+}
+
+.sign-box .input-field input.input:focus+label.label,
+.sign-box .input-field input.input.has-value+label.label {
+    top             : -6px;
+    left            : 12px;
+    font-size       : 13px;
+    background-color: #FFF;
+    padding         : 0 4px;
+    color           : #3F51B5;
+}
+
+.sign-box .checkbox-field input.checkbox {
+    position: absolute;
+    left    : -9999px;
+}
+
+.sign-box .checkbox-field label.label {
+    padding-left: 28px;
+    font-size   : 14px;
+    color       : #444;
+    cursor      : pointer;
+}
+
+.sign-box .checkbox-field label.label:before,
+.sign-box .checkbox-field label.label:after {
+    content                    : '';
+    position                   : absolute;
+    -webkit-transition         : all;
+    -o-transition              : all;
+    transition                 : all;
+    -webkit-transition-duration: 250ms;
+    transition-duration        : 250ms;
+}
+
+.sign-box .checkbox-field label.label:before {
+    left  : 0;
+    top   : 1px;
+    height: 15px;
+    width : 15px;
+    border: 1px solid #ABABAB;
+}
+
+.sign-box .checkbox-field input.checkbox:checked+label.label:before {
+    -webkit-transform: scale(0);
+    -ms-transform    : scale(0);
+    -o-transform     : scale(0);
+    transform        : scale(0);
+}
+
+.sign-box .checkbox-field label.label:after {
+    left                     : 2px;
+    top                      : 2px;
+    opacity                  : 0;
+    -webkit-transform        : scale(0) rotate(80deg);
+    -ms-transform            : scale(0) rotate(80deg);
+    -o-transform             : scale(0) rotate(80deg);
+    transform                : scale(0) rotate(80deg);
+    width                    : 18px;
+    height                   : 7px;
+    border-bottom            : 2px solid #3F51B5;
+    border-left              : 2px solid #3F51B5;
+    border-bottom-left-radius: 2px;
+}
+
+.sign-box .checkbox-field input.checkbox:checked+label.label:after {
+    -webkit-transform: scale(1) rotate(-50deg);
+    -ms-transform    : scale(1) rotate(-50deg);
+    -o-transform     : scale(1) rotate(-50deg);
+    transform        : scale(1) rotate(-50deg);
+    opacity          : 1;
+}
+
+.sign-box .input-field.right {
+    text-align: right;
+}
+
+.sign-box .input-field .btn {
+    min-width     : 110px;
+    font-size     : 14px;
+    padding       : 8px 0;
+    background    : #3F51B5;
+    color         : #FFF;
+    border        : none;
+    text-transform: uppercase;
+    box-shadow    : 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.sign-box .input-field .btn:hover {
+    background-color: #354497;
+}
